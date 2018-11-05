@@ -1,0 +1,23 @@
+{
+  "name": "peti",
+  "version": "1.0.0-alpha",
+  "description": "Small lib to render JSX",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel test -d test/.tmp --watch --ignore test/.tmp/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bastienrobert/peti.git"
+  },
+  "author": "Bastien Robert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bastienrobert/peti/issues"
+  },
+  "homepage": "https://github.com/bastienrobert/peti#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1"
+  }
+}
