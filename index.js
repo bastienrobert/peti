@@ -19,3 +19,5 @@ const Peti = {
     return element
   }
 }
+
+export default Peti
