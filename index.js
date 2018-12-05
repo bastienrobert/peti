@@ -1,6 +1,9 @@
 const Peti = {
   createElement: function(tag, attrs, children) {
     let element
+    if (typeof tag === 'function' || typeof tag === 'class') {
+      tag = new tag()
+    }
     if (typeof tag === 'object') {
       element = tag
       element.props = { ...attrs, children }
@@ -26,5 +29,3 @@ const Peti = {
     return element
   }
 }
-
-export default Peti
