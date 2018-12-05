@@ -1,6 +1,13 @@
 const Peti = {
   createElement: function(tag, attrs, children) {
-    let element = document.createElement(tag)
+    let element
+    if (typeof tag === 'object') {
+      element = tag
+      element.props = { ...attrs, children }
+      return element
+    } else {
+      element = document.createElement(tag)
+    }
 
     for (let name in attrs) {
       let value = attrs[name]

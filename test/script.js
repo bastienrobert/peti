@@ -1,11 +1,19 @@
-const title = <h1>Hi</h1>
+const Title = <h1>Hi</h1>
+
+const Test = <div>Hello</div>
 
 const hello = (
   <div id="test">
-    {title}
-    <h1 className="hola" ref="title">
+    <Title />
+    <Test hello="test">
+      <div>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+    </Test>
+    <h1 className="hola">
       Bye
-      <span ref="span">hi</span>
+      <span>hi</span>
     </h1>
     <h2>Plop</h2>
   </div>
