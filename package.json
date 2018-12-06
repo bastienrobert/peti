@@ -1,6 +1,6 @@
 {
   "name": "peti",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3-alpha",
   "description": "Small lib to render JSX",
   "main": "index.js",
   "scripts": {

@@ -2,7 +2,7 @@ const Peti = {
   createElement: function(tag, attrs, children) {
     let element
     if (typeof tag === 'function' || typeof tag === 'class') {
-      tag = new tag()
+      tag = new tag({ ...attrs, children })
     }
     if (typeof tag === 'object') {
       element = tag
